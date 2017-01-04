@@ -30,7 +30,6 @@ public class ServerStatusServiceImpl implements ServerStatusService {
 
     @Transactional
     public List<ProjectMasterEntity> list() {
-        System.out.println("Person List:: nnnnnnnn  111");
         return serverStatusDao.list();
     }
 }

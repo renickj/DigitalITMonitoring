@@ -31,10 +31,8 @@ public class ServerStatusDaoImpl implements ServerStatusDao{
 
     @SuppressWarnings("unchecked")
     public List<ProjectMasterEntity> list() {
-        System.out.println("Person List:: nnnnnnnn");
-        List<ProjectMasterEntity> projectMasterList = null;
+       List<ProjectMasterEntity> projectMasterList = null;
         try {
-            System.out.println("Person List:: nnnnnnnn");
             Session session = this.sessionFactory.getCurrentSession();
             String hql = "from ProjectMasterEntity";
             projectMasterList = (List<ProjectMasterEntity>) hibernateTemplate.find(hql);
